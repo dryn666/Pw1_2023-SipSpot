@@ -1,0 +1,312 @@
+/* Plano de fundo */
+body {
+    background-color: #001F18; /* Verde escuro aconchegante */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+.cabecalho {
+    background-image: url('../coqueteis-frescos-na-mesa-de-madeira-com-ai-generativa-de-folhas.jpg');
+    background-size: cover;
+    background-position: center top 35%;
+    text-align: center;
+    padding: 170px; /* Aumente o espaçamento inferior para ajustar a imagem */
+}
+
+/* Estilo do título dentro do cabeçalho */
+.cabecalho h1 {
+    font-size: 80px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 300;
+    display: inline-block;
+    color: #001F18; /* Fonte branca para contraste */
+    text-shadow:
+        -1px -1px 0 #ffffff, /* Sombra superior esquerda */
+        1px -1px 0 #ffffff, /* Sombra superior direita */
+        -1px 1px 0 #ffffff, /* Sombra inferior esquerda */
+        1px 1px 0 #ffffff; /* Sombra inferior direita */
+}
+
+.cabecalho p {
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 10;
+    color: #ffffff;
+}
+
+/* Estilo do menu */
+.menu {
+    background-color: #004E43;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center; /* Centralizar verticalmente */
+}
+
+.menu a {
+    font-size: 18px; /* Tamanho da fonte dos botões */
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px; /* Espaçamento entre os botões */
+    padding: 10px;
+    transition: color 0.3s ease; /* Transição suave da cor */
+}
+
+.menu a:hover {
+    color: #00CC99; /* Cor quando hover */
+}
+
+/* Estilo da seção "Página Inicial" */
+.conteudo {
+    padding: 50px;
+    text-align: center;
+}
+
+.conteudo h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.conteudo p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Estilo do rodapé */
+.rodape {
+    text-align: center;
+    padding: 10px;
+    background-color: #001F18; /* Verde escuro aconchegante */
+}
+
+/* Estilo da seção "Principais Drinks" */
+.destaques-drinks {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.destaques-drinks h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.drink {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 0 2.5%;
+    background-color: #004E43;
+    border-radius: 5px;
+}
+
+.drink img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.drink h4 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.drink p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.4;
+}
+
+/* Estilo do botão */
+.botao-destaque {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #004E43; /* Cor escura para hover */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-destaque:hover {
+    background-color: #00CC99; /* Cor verde destacada */
+}
+
+.grid-cardapio {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Colunas com mesmo tamanho */
+    gap: 20px; /* Espaçamento entre os cartões */
+    margin-top: 30px; /* Espaçamento do topo */
+}
+
+.item-cardapio {
+    background-color: #004E43;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.2s all ease-in-out;
+}
+
+.item-cardapio:hover {
+    transform: scale(1.05);
+}
+
+.item-cardapio img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.item-cardapio h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.item-cardapio p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.item-cardapio .preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00CC99; /* Cor verde destacada */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #004E43;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 9999;
+}
+
+/* Estilo do formulário de reserva */
+.conteudo form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.conteudo form input[type="text"],
+.conteudo form input[type="tel"],
+.conteudo form input[type="number"],
+.conteudo form input[type="date"],
+.conteudo form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    box-sizing: border-box; /* Mantém a largura esperada, mesmo com padding e borda */
+}
+
+.conteudo form textarea {
+    height: 120px;
+}
+
+.conteudo form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #004E43;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.conteudo form button:hover {
+    background-color: #00CC99;
+}
+
+/* Estilo do formulário de contato */
+.conteudo form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #fff;
+    text-align: left;
+}
+
+.conteudo form input[type="text"],
+.conteudo form input[type="tel"],
+.conteudo form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ffffff;
+    box-sizing: border-box; /* Mantém a largura esperada, mesmo com padding e borda */
+}
+
+.conteudo form textarea {
+    height: 120px;
+}
+
+.conteudo form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #004E43;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.conteudo form button:hover {
+    background-color: #00CC99;
+}
+
+.mensagem-enviada {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #00CC99; /* Cor de fundo verde */
+    color: #fff;
+    border-radius: 5px;
+}

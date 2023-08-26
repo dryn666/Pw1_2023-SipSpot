@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SipSpot - Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="cabecalho">
+        <h1>SipSpot</h1>
+        <p>O Refúgio dos Degustadores</p>
+    </div>
+
+    <div class="menu">
+        <a href="index.html">Início</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="reserva.html">Faça sua Reserva</a>
+        <a href="#">Contato</a>
+    </div>
+
+    <div class="conteudo">
+        <h2>Contato</h2>
+        <form id="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" oninput="validarTelefone(this)" required><br>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br>
+
+            <button type="button" class="botao-destaque" onclick="mostrarMensagemContato()">Enviar Mensagem</button>
+        </form>
+        <p id="mensagem-enviada" style="display: none;">Mensagem enviada, aguarde nosso retorno.</p>
+    </div>
+
+    <div class="rodape">
+        <p>Todos os direitos reservados &copy; 2023 SipSpot</p>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
